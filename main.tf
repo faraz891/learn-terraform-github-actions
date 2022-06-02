@@ -3,7 +3,7 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "3.26.0"
-      profile = "default"
+      shared_credentials_files = ["~/.aws/credentials"]
     }
     random = {
       source  = "hashicorp/random"
